@@ -1,40 +1,49 @@
-# Industry-Focused AI, Data Science & Software Engineering Portfolio
+# AI / Machine Learning / Data Science Portfolio
 
-This repository contains **seven runnable mini-projects** across real business problem domains. Every demo uses **synthetic data or a small local knowledge base**, avoiding private information or unsupported performance claims. The code is developed as portfolio work, not on behalf of any listed company.
+[← Back to GitHub profile](../README.md)
 
-| Project | Industry | Technical focus |
+This is the **project directory** for seven runnable examples. Each folder has a README, Python source code, and unit tests. Projects use **synthetic data** or a tiny local knowledge base; none claims access to employer data.
+
+## 🤖 Machine learning and AI applications
+
+| Project | Main skill | Recruiter-friendly summary |
 | --- | --- | --- |
-| [Product experimentation](product-experimentation/) | SaaS / cloud | A/B testing, conversion lift, confidence intervals, validation |
-| [Telecom churn](telecom-churn/) | Telecommunications | Retention cohorts, segmentation, Python |
-| [Industrial predictive maintenance](industrial-maintenance/) | Industrial machinery | Sensor telemetry, logistic regression, holdout validation, F1 |
-| [Retail demand forecast](retail-demand-forecast/) | Retail / operations | Time-series baselines, MAE, RMSE, WAPE |
-| [Transaction risk triage](fintech-transaction-risk/) | Financial services | Risk screening, precision/recall, explainability |
-| [Healthcare readmissions](healthcare-readmission/) | Digital health | Cohort analysis, 30-day outcomes, safe data handling |
-| [Contextual Q&A service](llm-qa-api/) | AI software | Retrieval, dependency injection, fallback logic, unit testing |
+| [Industrial predictive maintenance](industrial-maintenance/) | ML classification | Train a logistic regression model on simulated equipment readings and evaluate failure-risk alerts |
+| [Contextual Q&A application](llm-qa-api/) | LLM software design | Retrieve passages, construct grounded prompts, support injectable model clients and test fallback paths |
 
-## Run all project checks
+## 📊 Data science and product analytics
 
-Each project is deliberately standard-library-only, so the code is easy to run:
+| Project | Main skill | Recruiter-friendly summary |
+| --- | --- | --- |
+| [Telecom customer churn](telecom-churn/) | Retention analytics | Compare churn across service-contact and contract cohorts |
+| [A/B testing and product experiments](product-experimentation/) | Experiment statistics | Calculate variant conversion, absolute lift and confidence intervals |
+| [Retail demand forecasting](retail-demand-forecast/) | Forecasting | Evaluate a weekly seasonal-naive baseline using MAE, RMSE and WAPE |
+
+## 🏦 Industry-specific analytics
+
+| Project | Main skill | Recruiter-friendly summary |
+| --- | --- | --- |
+| [Financial transaction risk](fintech-transaction-risk/) | Risk analysis | Test an interpretable alerting heuristic, precision and recall |
+| [Healthcare readmission analysis](healthcare-readmission/) | Healthcare analytics | Analyze 30-day readmission rates by synthetic prior-utilization cohorts |
+
+## 🛠️ How to navigate
+
+Choose any project above → open its **README.md** for an overview → open the main **.py** file for the implementation → open **test_*.py** for tests.
+
+To run an individual project, follow its README. To run all project tests from the profile repository root:
 
 ```bash
-python -m unittest discover -s portfolio/product-experimentation -p 'test_*.py' -v
-python -m unittest discover -s portfolio/telecom-churn -p 'test_*.py' -v
-python -m unittest discover -s portfolio/industrial-maintenance -p 'test_*.py' -v
-python -m unittest discover -s portfolio/retail-demand-forecast -p 'test_*.py' -v
-python -m unittest discover -s portfolio/fintech-transaction-risk -p 'test_*.py' -v
-python -m unittest discover -s portfolio/healthcare-readmission -p 'test_*.py' -v
-python -m unittest discover -s portfolio/llm-qa-api -p 'test_*.py' -v
+for project in portfolio/*; do
+  if [ -d "$project" ] && ls "$project"/test_*.py >/dev/null 2>&1; then
+    python -m unittest discover -s "$project" -p 'test_*.py' -v
+  fi
+done
 ```
 
-All project test modules are included. GitHub Actions is intended to run them on pull requests, pushes, and scheduled maintenance checks. **Automatic test runs are not automatic proof of new code contributions.**
+**Automated checks:** [GitHub Actions](../../actions) — workflows test the portfolio when the relevant files change and on a maintenance schedule. Scheduled CI is not a substitute for actual development work.
 
-## Portfolio principles
+## 🔭 Next improvements
 
-- Reproducible analysis and clear input validation
-- Honest separation of synthetic/demo metrics from operational results
-- Interview-ready code that can be expanded with real permitted datasets
-- No claim of affiliation with the employers whose industries inspired project topics
+Add realistic data sources where permitted, stronger validation and benchmarks, dashboards, model calibration, and deployed API demonstrations. These examples are a foundation for deeper, individually showcased projects.
 
-## Recommended future upgrades
-
-Move the strongest projects into dedicated repositories after adding dataset documentation, notebooks, richer model comparisons, and deployed demos. Especially valuable: model calibration and PR-AUC for industrial risk, uplift and sample-size planning for experimentation, and a FastAPI service for contextual Q&A.
+**Data disclosure:** All demo datasets are simulated; metrics are reproducible demonstration outputs, not production results or company-specific achievements.
