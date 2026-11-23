@@ -6,7 +6,7 @@ I'm **Niranjanaa Jayakumar**, an M.S. Artificial Intelligence student at **Kenne
 
 I enjoy building practical ML solutions, exploring product and customer data, and developing useful AI-powered applications.
 
-[LinkedIn](https://www.linkedin.com/in/niranjanaa-jayakumar-32584721a/) · [Explore my AI/ML portfolio](portfolio/README.md)
+[LinkedIn](https://www.linkedin.com/in/niranjanaa-jayakumar-32584721a/) · [Explore my AI/ML portfolio](portfolio/README.md) · [Personal website source](docs/index.html)
 
 ## 🚀 Featured projects
 
