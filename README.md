@@ -1,55 +1,43 @@
-# Hi, I'm Niranjanaa Jayakumar 👋
+# Hi, I'm Niranjanaa 👋
 
-**Artificial Intelligence · Machine Learning · Data Science · Python Software Development**
+### Artificial Intelligence · Machine Learning · Data Science
 
-🎓 M.S. in Artificial Intelligence, Kennesaw State University (**expected December 2027**)  
-🎓 B.S. in Information Technology (Data Analytics), Kennesaw State University
+I'm **Niranjanaa Jayakumar**, an M.S. Artificial Intelligence student at **Kennesaw State University** (expected December 2027), with a B.S. in Information Technology (Data Analytics).
 
-I'm interested in creating practical AI systems, building predictive models, and translating complex data into useful decisions. My work spans **machine learning, product analytics, digital health, and software engineering**.
+I enjoy building practical ML solutions, exploring product and customer data, and developing useful AI-powered applications.
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/niranjanaa-jayakumar-32584721a/)
-[![Portfolio](https://img.shields.io/badge/Explore-Projects-238636?logo=github&logoColor=white)](portfolio/README.md)
+[LinkedIn](https://www.linkedin.com/in/niranjanaa-jayakumar-32584721a/) · [Explore my AI/ML portfolio](portfolio/README.md)
 
-## ⭐ Start here: AI & ML projects
+## 🚀 Featured projects
 
-| Project | Focus | Key concepts |
+| Project | Focus | What you'll find |
 | --- | --- | --- |
-| 🏗️ [Equipment Failure Risk](portfolio/industrial-maintenance/) | **Machine Learning · Industrial AI** | Sensor telemetry, logistic regression, precision/recall |
-| 🧠 [Contextual Q&A Core](portfolio/llm-qa-api/) | **LLM Applications · Software** | Retrieval, grounded answers, testable model interface |
-| 📉 [Telecom Churn Analysis](portfolio/telecom-churn/) | **Data Science · Customer Analytics** | Segmentation, retention, data validation |
-| 🛍️ [Retail Demand Forecasting](portfolio/retail-demand-forecast/) | **Forecasting · Supply Chain** | Seasonal baseline, MAE, RMSE, WAPE |
+| [Industrial Predictive Maintenance](portfolio/industrial-maintenance/) | Machine Learning · Industrial AI | Sensor-based failure-risk model, holdout evaluation, tests |
+| [Contextual AI Q&A](portfolio/llm-qa-api/) | AI Applications · Python | Retrieval, model interface, fallback behavior, unit tests |
+| [Telecom Churn Analytics](portfolio/telecom-churn/) | Data Science | Customer retention segments and data checks |
+| [Product Experimentation](portfolio/product-experimentation/) | Product Data Science | A/B testing, conversion lift and confidence intervals |
+| [Retail Demand Forecasting](portfolio/retail-demand-forecast/) | Forecasting | Seasonal demand baselines and error evaluation |
+| [Transaction Risk Triage](portfolio/fintech-transaction-risk/) | Financial Analytics | Explainable risk scoring and alert metrics |
+| [Healthcare Readmission Analysis](portfolio/healthcare-readmission/) | Healthcare Data Science | Patient cohort analysis and outcome metrics |
 
-## 📊 More projects by industry
+**[Browse project code, READMEs and run instructions →](portfolio/README.md)**
 
-| Project | Industry | Key concepts |
-| --- | --- | --- |
-| 🧪 [Product A/B Testing](portfolio/product-experimentation/) | Technology / SaaS | Experiment design, lift, confidence intervals |
-| 💳 [Transaction Risk](portfolio/fintech-transaction-risk/) | Finance / payments | Explainable scoring, fraud-alert tradeoffs |
-| 🩺 [Readmission Cohort Analysis](portfolio/healthcare-readmission/) | Healthcare | Outcome definition, cohort metrics |
+> These are educational, reproducible portfolio demonstrations using synthetic data or a small local knowledge base—not employer datasets or production deployments.
 
-**[Browse all seven projects, source code, and run instructions](portfolio/README.md)**
+## 🛠️ Technical skills
 
-> **Portfolio note:** These are educational, reproducible demonstrations using synthetic data or a small sample knowledge base. They do not represent work conducted for the companies whose industries motivated them.
+**Programming & analytics:** Python, SQL, Pandas, NumPy, data visualization  
+**Machine learning:** scikit-learn, classification, regression, model evaluation, statistics  
+**AI & engineering:** LLM applications, REST APIs, Git, automated unit testing
 
-## 🗂️ Additional GitHub work
+## 🎓 Education & certifications
 
-- [Heart Disease Prediction](https://github.com/niranjanaajk/predicting-heart-diseases) — existing machine-learning notebook and dataset
-- [Patient Readmission Dashboard](https://github.com/niranjanaajk/Patient_Readmission_Dashboard) — existing healthcare analytics repository
-- [ICU Risk Prediction](https://github.com/niranjanaajk/ICU_Risk_Prediction.py) — existing repository
-- [COVID-19 Analysis](https://github.com/niranjanaajk/COVID-19-) — existing repository
-
-## 🧰 Technical toolkit
-
-**Programming & data:** Python, SQL, Pandas, NumPy  
-**Machine learning & analysis:** scikit-learn, classification, regression, statistics, visualization  
-**AI & engineering:** LLM applications, REST APIs, Git/GitHub, unit testing
-
-## 🏅 Certifications
-
+- **M.S. Artificial Intelligence** — Kennesaw State University (expected Dec 2027)
+- **B.S. Information Technology (Data Analytics)** — Kennesaw State University (May 2025)
 - AWS Certified Machine Learning Engineer – Associate
 - Google Advanced Data Analytics Professional Certificate
 - Generative AI with Large Language Models — DeepLearning.AI & AWS
 
-## 📫 Contact
+## 📬 Connect
 
 [LinkedIn](https://www.linkedin.com/in/niranjanaa-jayakumar-32584721a/) · [Email](mailto:jkniranjanaa@gmail.com)
