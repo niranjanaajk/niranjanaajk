@@ -2,9 +2,18 @@
 
 [← Back to GitHub profile](../README.md)
 
-This is the **project directory** for seven runnable examples. Each folder has a README, Python source code, and unit tests. Projects use **synthetic data** or a tiny local knowledge base; none claims access to employer data.
+This is the **project directory** for nine runnable examples across eight folders. Each folder has a README, Python source code, and unit tests. Projects use **synthetic data** or a tiny local knowledge base; none claims access to employer data.
 
-## 🤖 Machine learning and AI applications
+## AI engineering and operational automation
+
+| Project | What to look for | Source |
+| --- | --- | --- |
+| [Runbook Investigation Agent](nonproduction-incident-investigation/README.md#2-runbook-investigation-agent) | LLM tool calling, SQLite runbook retrieval, source citations, and fallback behavior | [Agent](nonproduction-incident-investigation/agent.py) |
+| [Incident Trends API](nonproduction-incident-investigation/README.md#1-incident-trends-api) | Python REST endpoint that ranks recurring failures in synthetic operational data | [API](nonproduction-incident-investigation/incident_api.py) |
+
+These projects share [local setup instructions](nonproduction-incident-investigation/) and [tests](nonproduction-incident-investigation/test_portfolio.py).
+
+## Machine learning and AI applications
 
 | Project | Main skill | Recruiter-friendly summary |
 | --- | --- | --- |

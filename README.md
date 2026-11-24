@@ -1,43 +1,44 @@
-# Hi, I'm Niranjanaa 👋
+# Niranjanaa Jayakumar
 
-### Artificial Intelligence · Machine Learning · Data Science
+I'm an M.S. in Artificial Intelligence student at **Kennesaw State University** (expected December 2027). I work on AI applications that retrieve useful information, connect to existing systems, and make their outputs easier to verify. I'm based in Atlanta and exploring Summer 2027 internships in AI engineering, machine learning, and data science.
 
-I'm **Niranjanaa Jayakumar**, an M.S. Artificial Intelligence student at **Kennesaw State University** (expected December 2027), with a B.S. in Information Technology (Data Analytics).
+[LinkedIn](https://www.linkedin.com/in/niranjanaa-jayakumar-32584721a/) · [Email](mailto:jkniranjanaa@gmail.com) · [All projects](portfolio/README.md)
 
-I enjoy building practical ML solutions, exploring product and customer data, and developing useful AI-powered applications.
+## Current research
 
-[LinkedIn](https://www.linkedin.com/in/niranjanaa-jayakumar-32584721a/) · [Explore my AI/ML portfolio](portfolio/README.md) · [Personal website source](docs/index.html)
+At KSU's **HEART Lab**, I built and deployed the Mind Your Heart research website. My current work explores how LLM-assisted retrieval and interaction tracking could support a digital health research study.
 
-## 🚀 Featured projects
+## Featured AI engineering projects
 
-| Project | Focus | What you'll find |
+| Project | What it does | Explore |
 | --- | --- | --- |
-| [Industrial Predictive Maintenance](portfolio/industrial-maintenance/) | Machine Learning · Industrial AI | Sensor-based failure-risk model, holdout evaluation, tests |
-| [Contextual AI Q&A](portfolio/llm-qa-api/) | AI Applications · Python | Retrieval, model interface, fallback behavior, unit tests |
-| [Telecom Churn Analytics](portfolio/telecom-churn/) | Data Science | Customer retention segments and data checks |
-| [Product Experimentation](portfolio/product-experimentation/) | Product Data Science | A/B testing, conversion lift and confidence intervals |
-| [Retail Demand Forecasting](portfolio/retail-demand-forecast/) | Forecasting | Seasonal demand baselines and error evaluation |
-| [Transaction Risk Triage](portfolio/fintech-transaction-risk/) | Financial Analytics | Explainable risk scoring and alert metrics |
-| [Healthcare Readmission Analysis](portfolio/healthcare-readmission/) | Healthcare Data Science | Patient cohort analysis and outcome metrics |
+| **Runbook Investigation Agent** | Uses LLM tool calling to pull incident evidence from a Python REST API and retrieve troubleshooting guidance from SQLite. Returns source IDs and falls back to structured evidence if citations are missing. | [Run instructions](portfolio/nonproduction-incident-investigation/README.md#2-runbook-investigation-agent) · [Agent code](portfolio/nonproduction-incident-investigation/agent.py) |
+| **Incident Trends API** | Groups synthetic nonproduction incidents by service and ranks recurring failure signatures. Returns structured JSON for investigation. | [Run instructions](portfolio/nonproduction-incident-investigation/README.md#1-incident-trends-api) · [API code](portfolio/nonproduction-incident-investigation/incident_api.py) |
+| **Contextual AI Q&A** | Retrieves relevant passages, builds grounded prompts, and tests how the application behaves when the model is unavailable. | [README and code](portfolio/llm-qa-api/) |
 
-**[Browse project code, READMEs and run instructions →](portfolio/README.md)**
+The two incident projects share a [test suite](portfolio/nonproduction-incident-investigation/test_portfolio.py) and run on synthetic data. The agent has a local retrieval mode, and its LLM tool-call path is covered by tests with a simulated provider.
 
-> These are educational, reproducible portfolio demonstrations using synthetic data or a small local knowledge base—not employer datasets or production deployments.
+## Machine learning and analytics
 
-## 🛠️ Technical skills
+| Project | What it demonstrates |
+| --- | --- |
+| [Industrial Predictive Maintenance](portfolio/industrial-maintenance/) | Classify equipment failure risk from simulated sensor readings and evaluate the model on holdout data. |
+| [Telecom Churn Analytics](portfolio/telecom-churn/) | Compare churn across subscriber and contract segments. |
+| [Product Experimentation](portfolio/product-experimentation/) | Estimate conversion lift and confidence intervals from simulated A/B tests. |
+| [Retail Demand Forecasting](portfolio/retail-demand-forecast/) | Benchmark seasonal forecasts and compare error metrics. |
+| [Transaction Risk Triage](portfolio/fintech-transaction-risk/) | Evaluate explainable risk scoring and alert metrics. |
+| [Healthcare Readmission Analysis](portfolio/healthcare-readmission/) | Analyze 30-day readmission rates across synthetic patient cohorts. |
+
+## Technical skills
 
 **Programming & analytics:** Python, SQL, Pandas, NumPy, data visualization  
 **Machine learning:** scikit-learn, classification, regression, model evaluation, statistics  
 **AI & engineering:** LLM applications, REST APIs, Git, automated unit testing
 
-## 🎓 Education & certifications
+## Education and certifications
 
 - **M.S. Artificial Intelligence** — Kennesaw State University (expected Dec 2027)
 - **B.S. Information Technology (Data Analytics)** — Kennesaw State University (May 2025)
 - AWS Certified Machine Learning Engineer – Associate
 - Google Advanced Data Analytics Professional Certificate
 - Generative AI with Large Language Models — DeepLearning.AI & AWS
-
-## 📬 Connect
-
-[LinkedIn](https://www.linkedin.com/in/niranjanaa-jayakumar-32584721a/) · [Email](mailto:jkniranjanaa@gmail.com)
