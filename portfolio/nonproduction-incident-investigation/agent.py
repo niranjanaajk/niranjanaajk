@@ -2,6 +2,7 @@
 import argparse
 import json
 import os
+import re
 import sqlite3
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
@@ -24,6 +25,14 @@ def investigate(service):
         evidence = json.load(response)
     with sqlite3.connect(":memory:") as database:
         return recommend(evidence["failures"], database)
+
+
+def grounded_summary(evidence):
+    lines = []
+    for row in evidence:
+        source = f" [{row['citation']}]" if row["citation"] else ""
+        lines.append(f"{row['signature']}: {row['count']} events. {row['next_check']}{source}")
+    return "\n".join(lines)
 
 
 def completion(messages, tools, key, model):
@@ -64,10 +73,16 @@ def run_agent(question, complete, investigate_service=investigate):
         {"role": "assistant", "content": plan.get("content"), "tool_calls": calls},
         {"role": "tool", "tool_call_id": call["id"], "content": json.dumps(evidence)},
     ])
-    answer = complete(messages, None).get("content")
-    if not answer or any(row["citation"] and row["citation"] not in answer for row in evidence):
-        answer = "Review the incident counts and cited runbook checks below."
-    return {"answer": answer, "evidence": evidence}
+    try:
+        answer = complete(messages, None).get("content")
+    except (OSError, ValueError, KeyError, IndexError):
+        answer = None
+    expected = {row["citation"] for row in evidence if row["citation"]}
+    cited = set(re.findall(r"\bRB-\d+\b", answer)) if isinstance(answer, str) else set()
+    use_model = bool(isinstance(answer, str) and answer.strip() and expected and cited == expected)
+    return {"answer": answer if use_model else grounded_summary(evidence),
+            "summary_source": "model" if use_model else "evidence",
+            "evidence": evidence}
 
 
 if __name__ == "__main__":

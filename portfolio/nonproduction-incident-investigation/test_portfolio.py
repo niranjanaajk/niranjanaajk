@@ -35,7 +35,7 @@ class PortfolioTests(unittest.TestCase):
             self.assertEqual([item["citation"] for item in recommend(rows, database)], ["RB-01", None])
 
     def test_agent_uses_tool_and_falls_back_when_citation_missing(self):
-        evidence = [{"signature": "DB_POOL_TIMEOUT", "count": 2, "citation": "RB-01"}]
+        evidence = [{"signature": "DB_POOL_TIMEOUT", "count": 2, "citation": "RB-01", "next_check": "Inspect utilization."}]
 
         def complete(messages, tools):
             if tools:
@@ -52,7 +52,8 @@ class PortfolioTests(unittest.TestCase):
 
         result = run_agent("Why is checkout failing?", complete, investigate)
         self.assertEqual(result["evidence"], evidence)
-        self.assertTrue(result["answer"].startswith("Review the incident counts"))
+        self.assertIn("DB_POOL_TIMEOUT: 2 events", result["answer"])
+        self.assertEqual(result["summary_source"], "evidence")
 
 
 if __name__ == "__main__":
