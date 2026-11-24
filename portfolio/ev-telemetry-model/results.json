@@ -1,0 +1,10 @@
+{
+  "synthetic_trips": 2400,
+  "vehicles": 60,
+  "holdout_vehicles": 12,
+  "holdout_trips": 480,
+  "mae_wh_per_km": {
+    "median_baseline": 37.76,
+    "random_forest": 8.79
+  }
+}

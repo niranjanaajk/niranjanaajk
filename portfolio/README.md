@@ -56,3 +56,8 @@ done
 Add realistic data sources where permitted, stronger validation and benchmarks, dashboards, model calibration, and deployed API demonstrations. These examples are a foundation for deeper, individually showcased projects.
 
 **Data disclosure:** All demo datasets are simulated; metrics are reproducible demonstration outputs, not production results or company-specific achievements.
+
+## Automotive AI and data
+
+- [EV Telemetry Energy Intensity Model](ev-telemetry-model/) — SQL feature extraction and regression on a vehicle-level holdout of synthetic trips.
+- [Engineering Document Assistant](engineering-document-assistant/) — cited document retrieval and manual-review fallback on synthetic engineering notes.

@@ -1,0 +1,102 @@
+{
+  "passed": 16,
+  "total": 16,
+  "cases": [
+    {
+      "question": "battery pack temperature",
+      "expected": "BAT-01",
+      "actual": "BAT-01",
+      "passed": true
+    },
+    {
+      "question": "coolant flow",
+      "expected": "BAT-01",
+      "actual": "BAT-01",
+      "passed": true
+    },
+    {
+      "question": "charging session fails",
+      "expected": "CHG-01",
+      "actual": "CHG-01",
+      "passed": true
+    },
+    {
+      "question": "connector handshake",
+      "expected": "CHG-01",
+      "actual": "CHG-01",
+      "passed": true
+    },
+    {
+      "question": "missing telemetry",
+      "expected": "TEL-01",
+      "actual": "TEL-01",
+      "passed": true
+    },
+    {
+      "question": "ingestion timestamps",
+      "expected": "TEL-01",
+      "actual": "TEL-01",
+      "passed": true
+    },
+    {
+      "question": "assembly torque",
+      "expected": "MFG-01",
+      "actual": "MFG-01",
+      "passed": true
+    },
+    {
+      "question": "station measurements",
+      "expected": "MFG-01",
+      "actual": "MFG-01",
+      "passed": true
+    },
+    {
+      "question": "quality inspection defects",
+      "expected": "QLT-01",
+      "actual": "QLT-01",
+      "passed": true
+    },
+    {
+      "question": "batch identifier",
+      "expected": "QLT-01",
+      "actual": "QLT-01",
+      "passed": true
+    },
+    {
+      "question": "deployment rollback",
+      "expected": "REL-01",
+      "actual": "REL-01",
+      "passed": true
+    },
+    {
+      "question": "release version",
+      "expected": "REL-01",
+      "actual": "REL-01",
+      "passed": true
+    },
+    {
+      "question": "cafeteria menu",
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "question": "payroll schedule",
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "question": "parking permits",
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "question": "",
+      "expected": null,
+      "actual": null,
+      "passed": true
+    }
+  ]
+}
