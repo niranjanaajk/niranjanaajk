@@ -29,3 +29,7 @@ Run `python evaluate.py` to check eight deterministic scenarios, including windo
 Run `python deployment_triage.py checkout --cutoff 5`. This offline agent runs three read-only steps: compare failure counts across two equal windows, prioritize increases, and look up SQLite runbooks. The response includes an ordered tool trace and citations. Missing runbooks are flagged for manual review. A count increase is a signal to investigate, not evidence that a deployment caused it.
 
 Run `python evaluate_deployment.py` to evaluate 48 synthetic cases (three signatures and four possible counts in each window). Each case checks the expected triage status and any recommended checks or citation IDs. The benchmark covers unrelated-service events and the exclusive upper window boundary. It measures this deterministic workflow only. Live model evaluation and real deployment telemetry are outside this version.
+
+## Local reliability drill
+
+Run `python reliability_drill.py` to exercise baseline availability, a controlled local shutdown, and recovery after restarting the API on the same port. The probe checks the response payload and records elapsed time in milliseconds. The command exits with a failure status unless all three phases match the expected healthy, unavailable, and recovered states. Use the JSON output to document the incident timeline. Probe timings vary by machine. This loopback drill exercises a simulated outage against synthetic incident data.
