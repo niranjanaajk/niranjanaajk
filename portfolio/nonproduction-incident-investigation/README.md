@@ -23,3 +23,9 @@ With the API running, open http://127.0.0.1:8080/comparison?service=checkout&cut
 ## Offline acceptance evaluation
 
 Run `python evaluate.py` to check eight deterministic scenarios, including window boundaries, missing runbooks, invented citations, and simulated model timeouts. The CLI exits with a nonzero status on failure. The agent checks citation IDs against retrieved evidence and renders deterministic findings when the summary cannot be checked. Citation matching does not establish that every sentence in a model summary is factually supported.
+
+## In progress: Deployment Triage Agent
+
+Run `python deployment_triage.py checkout --cutoff 5`. This offline agent runs three read-only steps: compare failure counts across two equal windows, prioritize increases, and look up SQLite runbooks. The response includes an ordered tool trace and citations. Missing runbooks are flagged for manual review. A count increase is a signal to investigate, not evidence that a deployment caused it.
+
+Run `python evaluate_deployment.py` to evaluate 48 synthetic cases (three signatures and four possible counts in each window). Each case checks the expected triage status and any recommended checks or citation IDs. The benchmark covers unrelated-service events and the exclusive upper window boundary. It measures this deterministic workflow only. Live model evaluation and real deployment telemetry are outside this version.
