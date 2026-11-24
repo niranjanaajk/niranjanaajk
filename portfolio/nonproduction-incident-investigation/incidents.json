@@ -1,0 +1,6 @@
+[
+  {"service":"checkout","signature":"DB_POOL_TIMEOUT","minute":1},
+  {"service":"checkout","signature":"DB_POOL_TIMEOUT","minute":5},
+  {"service":"checkout","signature":"CACHE_MISS","minute":8},
+  {"service":"catalog","signature":"CACHE_MISS","minute":10}
+]
