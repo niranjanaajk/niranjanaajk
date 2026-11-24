@@ -19,9 +19,9 @@ TOOLS = [
 ]
 
 
-def investigate(service):
+def investigate(service, port=8080):
     query = urlencode({"service": service})
-    with urlopen("http://127.0.0.1:8080/incidents?" + query, timeout=5) as response:
+    with urlopen(f"http://127.0.0.1:{port}/incidents?" + query, timeout=5) as response:
         evidence = json.load(response)
     with sqlite3.connect(":memory:") as database:
         return recommend(evidence["failures"], database)

@@ -33,3 +33,7 @@ Run `python evaluate_deployment.py` to evaluate 48 synthetic cases (three signat
 ## Local reliability drill
 
 Run `python reliability_drill.py` to exercise baseline availability, a controlled local shutdown, and recovery after restarting the API on the same port. The probe checks the response payload and records elapsed time in milliseconds. The command exits with a failure status unless all three phases match the expected healthy, unavailable, and recovered states. Use the JSON output to document the incident timeline. Probe timings vary by machine. This loopback drill exercises a simulated outage against synthetic incident data.
+
+## Agent integration tests
+
+Run `python -m unittest -v` to test tool orchestration through the local REST server and SQLite. The three integration tests cover cited evidence, deterministic fallback after a simulated provider timeout, and a service with no incident data. The model provider is simulated, while the HTTP and SQLite calls run locally.
